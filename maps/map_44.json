@@ -1,0 +1,505 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "A"
+    },
+    {
+      "id": "B"
+    },
+    {
+      "id": "C"
+    },
+    {
+      "id": "D"
+    },
+    {
+      "id": "E"
+    },
+    {
+      "id": "F"
+    },
+    {
+      "id": "G"
+    },
+    {
+      "id": "H"
+    },
+    {
+      "id": "I"
+    },
+    {
+      "id": "J"
+    },
+    {
+      "id": "K"
+    },
+    {
+      "id": "L"
+    },
+    {
+      "id": "M"
+    },
+    {
+      "id": "N"
+    },
+    {
+      "id": "O"
+    },
+    {
+      "id": "P"
+    },
+    {
+      "id": "Q"
+    },
+    {
+      "id": "R"
+    },
+    {
+      "id": "S"
+    },
+    {
+      "id": "T"
+    },
+    {
+      "id": "U"
+    },
+    {
+      "id": "V"
+    },
+    {
+      "id": "W"
+    },
+    {
+      "id": "X"
+    }
+  ],
+  "links": [
+    {
+      "violence_night": 1,
+      "violence_day": 1,
+      "terrain_day": 6,
+      "terrain_night": 10,
+      "source": "A",
+      "target": "U"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 6,
+      "terrain_day": 6,
+      "terrain_night": 9,
+      "source": "A",
+      "target": "J"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 6,
+      "terrain_day": 6,
+      "terrain_night": 10,
+      "source": "A",
+      "target": "V"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 9,
+      "terrain_day": 2,
+      "terrain_night": 4,
+      "source": "A",
+      "target": "T"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 7,
+      "terrain_day": 6,
+      "terrain_night": 9,
+      "source": "A",
+      "target": "K"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 10,
+      "terrain_day": 1,
+      "terrain_night": 4,
+      "source": "B",
+      "target": "W"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 2,
+      "terrain_day": 2,
+      "terrain_night": 3,
+      "source": "B",
+      "target": "U"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 9,
+      "terrain_day": 6,
+      "terrain_night": 11,
+      "source": "B",
+      "target": "X"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 7,
+      "terrain_day": 3,
+      "terrain_night": 8,
+      "source": "B",
+      "target": "J"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 5,
+      "terrain_day": 1,
+      "terrain_night": 4,
+      "source": "B",
+      "target": "F"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 3,
+      "terrain_day": 2,
+      "terrain_night": 7,
+      "source": "B",
+      "target": "I"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 6,
+      "terrain_day": 4,
+      "terrain_night": 5,
+      "source": "B",
+      "target": "O"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 10,
+      "terrain_day": 4,
+      "terrain_night": 5,
+      "source": "C",
+      "target": "I"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 3,
+      "terrain_day": 6,
+      "terrain_night": 7,
+      "source": "C",
+      "target": "X"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 10,
+      "terrain_day": 3,
+      "terrain_night": 4,
+      "source": "C",
+      "target": "L"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 3,
+      "terrain_day": 1,
+      "terrain_night": 5,
+      "source": "D",
+      "target": "F"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 4,
+      "terrain_day": 6,
+      "terrain_night": 11,
+      "source": "D",
+      "target": "R"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 11,
+      "terrain_day": 2,
+      "terrain_night": 3,
+      "source": "D",
+      "target": "S"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 6,
+      "terrain_day": 3,
+      "terrain_night": 4,
+      "source": "D",
+      "target": "O"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 9,
+      "terrain_day": 3,
+      "terrain_night": 8,
+      "source": "D",
+      "target": "U"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 4,
+      "terrain_day": 3,
+      "terrain_night": 7,
+      "source": "D",
+      "target": "L"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 6,
+      "terrain_day": 4,
+      "terrain_night": 7,
+      "source": "D",
+      "target": "I"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 8,
+      "terrain_day": 1,
+      "terrain_night": 4,
+      "source": "E",
+      "target": "T"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 4,
+      "terrain_day": 2,
+      "terrain_night": 4,
+      "source": "E",
+      "target": "I"
+    },
+    {
+      "violence_night": 1,
+      "violence_day": 4,
+      "terrain_day": 4,
+      "terrain_night": 7,
+      "source": "E",
+      "target": "U"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 4,
+      "terrain_day": 3,
+      "terrain_night": 8,
+      "source": "E",
+      "target": "O"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 4,
+      "terrain_day": 6,
+      "terrain_night": 11,
+      "source": "E",
+      "target": "H"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 7,
+      "terrain_day": 2,
+      "terrain_night": 3,
+      "source": "E",
+      "target": "Q"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 7,
+      "terrain_day": 5,
+      "terrain_night": 9,
+      "source": "F",
+      "target": "M"
+    },
+    {
+      "violence_night": 1,
+      "violence_day": 5,
+      "terrain_day": 3,
+      "terrain_night": 7,
+      "source": "F",
+      "target": "J"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 7,
+      "terrain_day": 4,
+      "terrain_night": 7,
+      "source": "G",
+      "target": "O"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 3,
+      "terrain_day": 5,
+      "terrain_night": 8,
+      "source": "G",
+      "target": "T"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 5,
+      "terrain_day": 3,
+      "terrain_night": 6,
+      "source": "G",
+      "target": "S"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 5,
+      "terrain_day": 1,
+      "terrain_night": 2,
+      "source": "G",
+      "target": "R"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 9,
+      "terrain_day": 6,
+      "terrain_night": 10,
+      "source": "H",
+      "target": "J"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 8,
+      "terrain_day": 6,
+      "terrain_night": 11,
+      "source": "H",
+      "target": "M"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 5,
+      "terrain_day": 2,
+      "terrain_night": 4,
+      "source": "H",
+      "target": "N"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 7,
+      "terrain_day": 6,
+      "terrain_night": 7,
+      "source": "I",
+      "target": "S"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 5,
+      "terrain_day": 1,
+      "terrain_night": 6,
+      "source": "J",
+      "target": "M"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 7,
+      "terrain_day": 5,
+      "terrain_night": 7,
+      "source": "J",
+      "target": "O"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 3,
+      "terrain_day": 5,
+      "terrain_night": 6,
+      "source": "K",
+      "target": "L"
+    },
+    {
+      "violence_night": 1,
+      "violence_day": 1,
+      "terrain_day": 1,
+      "terrain_night": 5,
+      "source": "K",
+      "target": "S"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 9,
+      "terrain_day": 1,
+      "terrain_night": 4,
+      "source": "L",
+      "target": "W"
+    },
+    {
+      "violence_night": 4,
+      "violence_day": 5,
+      "terrain_day": 3,
+      "terrain_night": 5,
+      "source": "N",
+      "target": "Q"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 10,
+      "terrain_day": 6,
+      "terrain_night": 7,
+      "source": "N",
+      "target": "V"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 7,
+      "terrain_day": 5,
+      "terrain_night": 8,
+      "source": "O",
+      "target": "V"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 10,
+      "terrain_day": 3,
+      "terrain_night": 4,
+      "source": "O",
+      "target": "R"
+    },
+    {
+      "violence_night": 1,
+      "violence_day": 2,
+      "terrain_day": 1,
+      "terrain_night": 3,
+      "source": "P",
+      "target": "X"
+    },
+    {
+      "violence_night": 1,
+      "violence_day": 2,
+      "terrain_day": 1,
+      "terrain_night": 3,
+      "source": "P",
+      "target": "W"
+    },
+    {
+      "violence_night": 5,
+      "violence_day": 5,
+      "terrain_day": 2,
+      "terrain_night": 6,
+      "source": "Q",
+      "target": "R"
+    },
+    {
+      "violence_night": 6,
+      "violence_day": 8,
+      "terrain_day": 4,
+      "terrain_night": 7,
+      "source": "Q",
+      "target": "T"
+    },
+    {
+      "violence_night": 2,
+      "violence_day": 6,
+      "terrain_day": 3,
+      "terrain_night": 5,
+      "source": "S",
+      "target": "V"
+    },
+    {
+      "violence_night": 3,
+      "violence_day": 5,
+      "terrain_day": 4,
+      "terrain_night": 6,
+      "source": "S",
+      "target": "W"
+    }
+  ]
+}
