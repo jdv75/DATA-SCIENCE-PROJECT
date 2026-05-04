@@ -306,3 +306,39 @@ print("\nAblation Comparison Table:")
 print(ablation_df.sort_values(by="F1 Macro", ascending=False))
 
 
+# PCA Projection
+
+from sklearn.decomposition import PCA
+
+X_test_transformed = best_pipeline.named_steps["preprocessor"].transform(X_test)
+if hasattr(X_test_transformed, "toarray"):
+    X_test_transformed = X_test_transformed.toarray()
+X_test_transformed = X_test_transformed.astype(float)
+
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_test_transformed)
+
+plt.figure(figsize=(8, 6))
+label_colors = {"day": "steelblue", "night": "darkorange", "impossible": "crimson"}
+for label in label_encoder.classes_:
+    mask = y_test.values == label
+    plt.scatter(X_pca[mask, 0], X_pca[mask, 1], label=label, alpha=0.5, s=12, color=label_colors[label])
+plt.xlabel(f"PC1 ({pca.explained_variance_ratio_[0]*100:.1f}% variance)")
+plt.ylabel(f"PC2 ({pca.explained_variance_ratio_[1]*100:.1f}% variance)")
+plt.title("PCA Projection of Test Set (colored by label)")
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# SHAP Values
+
+import shap
+
+feature_names = best_pipeline.named_steps["preprocessor"].get_feature_names_out()
+rf_clf = best_pipeline.named_steps["classifier"]
+
+explainer = shap.TreeExplainer(rf_clf)
+shap_values = explainer.shap_values(X_test_transformed)
+
+shap.summary_plot(shap_values, X_test_transformed, feature_names=feature_names, class_names=label_encoder.classes_, plot_type="bar", show=True)
+
