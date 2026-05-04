@@ -14,15 +14,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
-# =========================
-# Reproducibility
-# =========================
 random.seed(44)
 np.random.seed(42)
 
-# =========================
-# Helper functions
-# =========================
 def load_graph(filename):
     with open(filename, "r") as f:
         data = json.load(f)
@@ -77,9 +71,6 @@ def best_time_to_travel(G, origin, destination, supplies):
 
     return best, day_result, night_result
 
-# =========================
-# Dataset generation
-# =========================
 
 data = []
 maps_folder = "maps"
@@ -129,10 +120,6 @@ print("\nDataset shape:", df.shape)
 df.to_csv("military_routes_dataset_50_maps.csv", index=False)
 print("\nSaved as military_routes_dataset_50_maps.csv")
 
-# =========================
-# Split by map_id
-# =========================
-
 map_ids = df["map_id"].unique()
 np.random.shuffle(map_ids)
 
@@ -152,17 +139,9 @@ y_train = train_df["best_option"]
 X_test = test_df.drop(columns=["best_option", "map_id"])
 y_test = test_df["best_option"]
 
-# =========================
-# Label encoding
-# =========================
-
 label_encoder = LabelEncoder()
 y_train_encoded = label_encoder.fit_transform(y_train)
 y_test_encoded = label_encoder.transform(y_test)
-
-# =========================
-# Preprocessing
-# =========================
 
 categorical_features = ["origin", "destination"]
 numerical_features = [
@@ -185,20 +164,12 @@ preprocessor = ColumnTransformer(
     ]
 )
 
-# =========================
-# Models
-# =========================
-
 models = {
     "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42),
     "Decision Tree": DecisionTreeClassifier(random_state=42),
     "Random Forest": RandomForestClassifier(n_estimators=200, random_state=42),
     "MLP": MLPClassifier(hidden_layer_sizes=(32, 16), max_iter=500, random_state=42)
 }
-
-# =========================
-# Training and evaluation
-# =========================
 
 results = []
 
@@ -284,15 +255,10 @@ plt.tight_layout()
 plt.show()
 
 
-# =========================
-# Ablation Study
-# =========================
-
 print("\n=========================")
 print("ABLATION STUDY")
 print("=========================")
 
-# Reduced feature set (remove "oracle-like" features)
 reduced_numerical_features = [
     "supplies",
     "cost_diff",
